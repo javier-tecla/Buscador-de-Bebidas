@@ -5,7 +5,7 @@ import axios from 'axios'
 const CategoriasContext = createContext()
 
 const CategoriasProvider = ({children}) => {
-    const [categorias, setCategorias] = useState()
+    const [categorias, setCategorias] = useState([])
 
     const obtenerCategorias = async () => {
         try {
